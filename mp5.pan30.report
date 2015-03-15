@@ -1,0 +1,254 @@
+
+mp5 grade report for pan30
+================================
+
+Latest handin (graded copy) was - on_time
+
+*Regular Problems:
+Grading script score  => [64 / 66]
+Late Penalty          => 0
+Point adjustments     => 0
+Total                 => 64
+
+*Extra Credit:
+Grading script score for extra credit => [3 / 3]
+Late Penalty for extra credit         => 0
+Point adjustments for extra credit    => 0
+Total extra credit                    => 3
+
+
+mp5grader program output
+---------------------
+
+
+[1 / 1] import_list [("a",1);("b",2);("c",3)] (correct)
+[1 / 1] import_list [] (correct)
+[1 / 1] import_list [("",10000000);("()",-2);("()",-10000000);("()",10000000);("()",2);("()",101000)] (correct)
+[1 / 1] import_list [("",1);("(((((((())))))))",2);("$$$$$$$$$$$$$$$$$$$$$$$$",3);("avreheh",1);("568h",2);("gg",3);("",1);("(((((((())))))))",2);("$$$$$$$$$$$$$$$$$$$$$$$$",3);("avre`vheh",1);("568h",2);("gg",3)] (correct)
+[4 / 4] list_all (correct)
+[1 / 1] cal_max_exp_height (BinOpAppExp (ConsOp, BinOpAppExp (CommaOp, ConstExp (StringConst "a"), ConstExp (IntConst 1)), BinOpAppExp (ConsOp, BinOpAppExp (CommaOp, ConstExp (StringConst "b"), ConstExp (IntConst 2)), BinOpAppExp (ConsOp, BinOpAppExp (CommaOp, ConstExp (StringConst "c"), ConstExp (IntConst 3)), ConstExp NilConst)))) (correct)
+[1 / 1] cal_max_exp_height (VarExp "a") (correct)
+[1 / 1] cal_max_exp_height (ConstExp (IntConst 5)) (correct)
+[1 / 1] cal_max_exp_height (IfExp (BinOpAppExp(EqOp, VarExp "a", ConstExp (StringConst "b")), MonOpAppExp(HdOp, AppExp(VarExp "ww", ConstExp NilConst)), FnExp("x", VarExp "a"))) (correct)
+[1 / 1] cal_max_exp_height (LetExp(Seq(Rec("g","w",VarExp "q"), Val("a", ConstExp UnitConst)), AppExp(AppExp(VarExp "g", VarExp "a"), VarExp "d"))) (correct)
+[1 / 1] freeVarsInExp (VarExp "x") (correct)
+[1 / 1] freeVarsInExp (ConstExp NilConst) (correct)
+[1 / 1] freeVarsInExp (MonOpAppExp (TlOp, VarExp "v")) (correct)
+[1 / 1] freeVarsInExp_sol (BinOpAppExp (CommaOp, VarExp "v", VarExp "dv")) (correct)
+[1 / 1] freeVarsInExp_sol (MonOpAppExp (IntNegOp, BinOpAppExp (ConcatOp, VarExp "fg", VarExp "yz"))) (correct)
+[1 / 1] freeVarsInExp_sol (BinOpAppExp (ConsOp, MonOpAppExp (TlOp, VarExp "v"), MonOpAppExp (TlOp, VarExp "w"))) (correct)
+[1 / 1] freeVarsInExp_sol (IfExp(VarExp "a",VarExp "b",VarExp "c")) (correct)
+[1 / 1] freeVarsInExp_sol (AppExp(VarExp "d",VarExp "e")) (correct)
+[1 / 1] freeVarsInExp_sol (IfExp(AppExp(VarExp "a",VarExp "b"),VarExp "c",VarExp "f")) (correct)
+[1 / 1] freeVarsInExp_sol (AppExp(VarExp "d",IfExp(BinOpAppExp(GreaterOp, VarExp "silly", ConstExp (BoolConst true)), VarExp "x", VarExp "y"))) (correct)
+[1 / 1] freeVarsInExp (FnExp("x", VarExp "x")) (correct)
+[1 / 1] freeVarsInExp (FnExp("x", VarExp "y")) (correct)
+[1 / 1] freeVarsInExp_sol (AppExp(FnExp("x", FnExp("z",AppExp(VarExp "y", VarExp "z"))), VarExp "x")) (correct)
+[1 / 1] freeAndBindingVarsInDec (Val ("",ConstExp NilConst)) (correct)
+[1 / 1] freeAndBindingVarsInDec (Val ("q",VarExp "r")) (correct)
+[1 / 1] freeAndBindingVarsInDec (Val ("q",VarExp "q")) (correct)
+[1 / 1] freeAndBindingVarsInDec (Rec ("f", "x", BinOpAppExp(IntPlusOp, VarExp "x", AppExp(VarExp "f", VarExp "y")))) (correct)
+[1 / 1] freeAndBindingVarsInDec_stu (Seq(Val("15", VarExp "12"), Val("0", VarExp "4"))) (correct)
+[1 / 1] freeAndBindingVarsInDec_stu (Seq(Val("15", VarExp "12"), Val("0", VarExp "15"))) (correct)
+[1 / 1] freeAndBindingVarsInDec_stu (Seq(Val("0", VarExp "12"), Val("12", VarExp "15"))) (correct)
+[1 / 1] freeVarsInExp (LetExp(Val("x", VarExp "y"), VarExp "x")) (correct)
+[1 / 1] freeVarsInExp_sol (LetExp(Val("x", AppExp(VarExp "x", VarExp "y")), VarExp "z")) (correct)
+[1 / 1] freeVarsInExp_sol (LetExp(Val("x", VarExp "y"), AppExp(VarExp "x", VarExp "y"))) (correct)
+[1 / 1] freeAndBindingVarsInDec_sol (Seq(Rec("g", "h", VarExp "q"), Val("x", AppExp(AppExp(VarExp "h", VarExp "g"),AppExp(VarExp "x", VarExp "q"))))) (correct)
+[1 / 1] freeAndBindingVarsInDec_sol (Seq (Val ("aa", LetExp (Seq(Val ("a", VarExp "b"), Rec("f", "x", AppExp(AppExp(VarExp "f", VarExp "a"), VarExp "x"))), AppExp(AppExp(VarExp "f", VarExp "a"), VarExp "aa"))), Val("bb", LetExp(Rec ("g", "y", AppExp(AppExp(VarExp "aa", VarExp "a"), AppExp(VarExp "g", VarExp "y"))), AppExp(AppExp(VarExp "g", VarExp "y"), AppExp(VarExp "f",VarExp "x")))))) (correct)
+[1 / 1] cps_exp (VarExp "x") (ContVarCPS 0) 1 (correct)
+[1 / 1] cps_exp (VarExp "y") External 10 (correct)
+[1 / 1] cps_exp (ConstExp (StringConst "x")) (ContVarCPS 0) 1 (correct)
+[1 / 1] cps_exp (ConstExp (BoolConst true)) k1 2 (correct)
+[1 / 1] cps_exp (IfExp (VarExp "b", ConstExp (IntConst 2), ConstExp (IntConst 5))) (ContVarCPS 0) 1 (correct)
+[1 / 1] cps_exp_sol (IfExp (ConstExp(BoolConst false), VarExp "a", VarExp "b")) k1 2 (correct)
+[1 / 1] cps_exp_sol (IfExp (IfExp(VarExp "b", ConstExp (IntConst 2), ConstExp (IntConst 5)), IfExp (ConstExp(BoolConst false), VarExp "a", VarExp "aa"), IfExp(VarExp "e", ConstExp (RealConst 5.5), VarExp "c"))) k0 (~-1) (correct)
+[1 / 1] cps_exp (AppExp (VarExp "f", VarExp "x")) (ContVarCPS 0) 1 (correct)
+[1 / 1] cps_exp_sol (AppExp(AppExp(VarExp "a", ConstExp UnitConst), VarExp "c")) k2 2 (correct)
+[0 / 1] cps_exp_sol (AppExp(AppExp(VarExp "b", ConstExp UnitConst), VarExp "c")) k1 2 (student solution returns an incorrect value)
+[1 / 1] cps_exp (BinOpAppExp (IntPlusOp, ConstExp(IntConst 5), ConstExp(IntConst 1))) (ContVarCPS 3) 4 (correct)
+[1 / 1] cps_exp_sol (BinOpAppExp(ConcatOp, BinOpAppExp(IntMinusOp, VarExp "a", VarExp "b"), VarExp "c")) k2 2 (correct)
+[1 / 1] cps_exp_sol (BinOpAppExp(ConsOp,BinOpAppExp(CommaOp,VarExp "b", ConstExp UnitConst), VarExp "a")) k1 2 (correct)
+[1 / 1] cps_exp (MonOpAppExp (HdOp, ConstExp NilConst)) (ContVarCPS 0) 1 (correct)
+[1 / 1] cps_exp_sol (MonOpAppExp (HdOp, VarExp "b")) k2 2 (correct)
+[1 / 1] cps_exp_sol (MonOpAppExp (HdOp, VarExp "a")) k1 2 (correct)
+[1 / 1] cps_exp (FnExp ("x", VarExp "x")) (ContVarCPS 0) 1 (correct)
+[1 / 1] cps_exp_sol (FnExp ("a", ConstExp (IntConst 2))) k0 1 (correct)
+[1 / 1] cps_exp_sol (FnExp ("a", VarExp "a")) k2 1 (correct)
+[1 / 1] cps_dec (Val ("x", ConstExp(IntConst 2))) (VarCPS (ContVarCPS 0, "x")) 1 (correct)
+[1 / 1] cps_dec_sol (Val ("a", AppExp(VarExp "a", VarExp "b"))) (AppCPS(k2,"a","b")) 2 (correct)
+[1 / 1] cps_dec_sol (Val ("b", AppExp(VarExp "a", VarExp "b"))) (AppCPS(k1,"a","b")) 2 (correct)
+[1 / 1] cps_dec (Seq (Val ("x", ConstExp(IntConst 2)), Val ("y", VarExp "x"))) (VarCPS (ContVarCPS 0, "x")) 1 (correct)
+[1 / 1] cps_dec_sol (Seq (Val ("a", ConstExp(IntConst 5)), Val ("b", VarExp "c"))) (AppCPS(k1,"a","b")) 2 (correct)
+[1 / 1] cps_dec_sol (Seq (Val ("a", ConstExp(IntConst 5)), Val ("b", VarExp "a"))) (AppCPS(k2,"a","b")) 2 (correct)
+[1 / 1] cps_exp (LetExp (Val ("x", ConstExp(IntConst 2)), VarExp "x")) (ContVarCPS 0) 1 (correct)
+[1 / 1] cps_exp_sol (LetExp (Val ("a", VarExp "a"), LetExp(Val ("b", AppExp(VarExp "a", VarExp "b")), BinOpAppExp(ConsOp, VarExp "b", VarExp "a")))) k0 (~-1) (correct)
+[0 / 1] cps_exp_sol (LetExp(Seq(Val ("a", VarExp "b"), Val("c", VarExp "d")), AppExp (VarExp "a", VarExp "b"))) k1 2 (student solution returns an incorrect value)
+
+[1 / 1] cps_exp (LetExp (Rec("f", "x",VarExp "x"), ConstExp (IntConst 4))) (ContVarCPS 1) 2 (correct)
+[1 / 1] cps_exp_sol ackermann External 0 (correct)
+[1 / 1] cps_dec_sol e (AppCPS(k1,"a","b")) 2 (correct)
+Total: [64 / 66]
+Extra: [3 / 3]
+
+Additional outout from compiling students code (may be empty)
+----------------------------------------------------
+
+
+
+Student's code (with comments and point adjustments)
+----------------------------------------------------
+
+
+(* File: mp5-skeleton.ml *)
+(* Team with: Qian Sun - qiansun1 and Yifang Zhang - zhang303 *)
+
+open Mp5common
+
+(* Problem 1 *)
+let rec import_list lst =
+	match lst with
+		| [] -> ConstExp(NilConst)	
+		| ((a, b) :: cs) -> 
+			BinOpAppExp(ConsOp, 
+				BinOpAppExp(CommaOp, ConstExp(StringConst a), ConstExp(IntConst b)),
+				import_list cs
+			)
+
+(* Problem 2 *)
+let list_all = 
+	Rec("list_all",  "p",
+		FnExp("xs",
+			IfExp(BinOpAppExp(EqOp, VarExp("xs"), ConstExp(NilConst)),
+				ConstExp(BoolConst(true)),
+					IfExp(AppExp(VarExp("p"),MonOpAppExp(HdOp,VarExp("xs"))),
+						IfExp(
+							AppExp(
+								AppExp(VarExp("list_all"),VarExp("p")),
+								MonOpAppExp(TlOp,VarExp("xs"))
+							),
+							ConstExp(BoolConst(true)),
+							ConstExp(BoolConst(false))
+						),
+					ConstExp(BoolConst(false))
+				)  			
+			)	
+		) 
+	)
+
+
+(* Problem 3 *)
+let rec cal_max_exp_height exp =
+	match exp with
+		| VarExp(_) | ConstExp(_) -> 1
+		| MonOpAppExp(_, a)	| FnExp(_, a) -> (cal_max_exp_height a) + 1
+		| BinOpAppExp(_, a, b) | AppExp(a, b) -> 
+			(max (cal_max_exp_height a) (cal_max_exp_height b)) + 1
+		| IfExp(a, b, c) -> 
+				(max 
+					(max (cal_max_exp_height a) (cal_max_exp_height b)) 
+					(cal_max_exp_height c)
+				) + 1
+		 | LetExp(a, b) -> 
+			(max (cal_max_dec_height a) (cal_max_exp_height b))+1
+
+and cal_max_dec_height dec = 
+	match dec with
+		| Rec(_, _, a) | Val(_, a) -> 
+			(cal_max_exp_height a) + 1
+		| Seq(a, b) -> 
+			(max (cal_max_dec_height a) (cal_max_dec_height b)) + 1
+
+(* Problem 4 *)
+let rec freeVarsInExp exp = 
+	match exp with
+		| ConstExp(_) -> []
+		| VarExp(a) -> [a] 
+		| BinOpAppExp(_, a, b) | AppExp(a, b) -> 
+			(freeVarsInExp a) @ (freeVarsInExp b)
+		| MonOpAppExp(_, a) -> 
+			(freeVarsInExp a)
+		| FnExp(a, b) -> 
+			List.filter (fun f -> not (f = a)) (freeVarsInExp b)
+		| LetExp(a, b) -> 
+			let (c, d) = freeAndBindingVarsInDec a
+			in (c @ (List.filter (fun f -> not(List.mem f d)) (freeVarsInExp b)))
+		| IfExp(a, b, c) -> 
+			((freeVarsInExp a) @ (freeVarsInExp b)) @ (freeVarsInExp c)
+
+and freeAndBindingVarsInDec dec = 
+	match dec with
+		| Val(a, b) -> (freeVarsInExp b, [a])
+		| Rec(a, b, c) -> 
+			(List.filter (fun f -> not(List.mem f [a;b])) (freeVarsInExp c),[a])
+		| Seq(a, b) -> 
+			let (a1, b1) = freeAndBindingVarsInDec a
+			in
+				let (a2, b2) = freeAndBindingVarsInDec b
+				in
+					(a1 @ (List.filter (fun f -> not(List.mem f b1)) a2), b1 @ b2);;
+
+(* Problem 5 *)
+let rec cps_exp e k kx =  
+	match e with
+		| VarExp(v) -> (VarCPS(k, v), kx)
+		| ConstExp(c) -> (ConstCPS(k, c), kx)
+		| IfExp(a, b, c) -> 
+			let (d, e) = cps_exp b k kx 
+			in
+				let (d2, e2) = cps_exp c k e
+				in
+					let f = 
+						freshFor ((freeVarsInExp b) @ (freeVarsInExp c) @ (freeVarsInContCPS k)) 
+					in
+						(cps_exp a (ContCPS(f, IfCPS(f, d, d2))) e2)
+	| MonOpAppExp(a, b) -> 
+		let c = freshFor ((freeVarsInExp b) @ (freeVarsInContCPS k)) 
+		in
+			(cps_exp b (ContCPS(c, MonOpAppCPS(k, a, c))) kx)
+	| BinOpAppExp(a, b, c) -> 
+		let d = freshFor ((freeVarsInExp b) @ (freeVarsInExp c) @ (freeVarsInContCPS k)) 
+		in
+			let e = 
+				freshFor ((freeVarsInExp b) @ (freeVarsInExp c) @ (freeVarsInContCPS k) @ [d]) 
+			in
+				let (f, g) = cps_exp c (ContCPS(e, BinOpAppCPS(k, a, d, e))) kx 
+				in
+					(cps_exp b (ContCPS(d, f)) g)
+	| AppExp(a, b) -> 
+		let c = freshFor ((freeVarsInExp a) @ (freeVarsInContCPS k)) 
+		in
+			let d = freshFor ((freeVarsInContCPS k) @ [c]) 
+			in
+				let (e, f) = cps_exp b (ContCPS(d, AppCPS(k, c, d))) kx 
+				in
+					(cps_exp a (ContCPS(c,e)) f)
+	| FnExp(a, b) -> 
+		let (c, d) = cps_exp b (ContVarCPS kx) (kx + 1) 
+		in
+			(FnCPS(k, a, kx, c), d)
+	| LetExp(a, b) -> 
+		let (c, d) = cps_exp b k kx 
+		in
+			(cps_dec a c d)
+
+and cps_dec dec ecps kx =  
+	match dec with
+		| Val(a, b) -> 
+			cps_exp b (ContCPS(a, ecps)) kx		
+		| Seq(a, b) -> 
+			let (c, d) = cps_dec b ecps kx 
+			in
+				cps_dec a c d
+		| Rec(a, b, c) -> 
+			let (d, e) = cps_exp c (ContVarCPS kx) (kx + 1) 
+			in
+				(FixCPS(ContCPS(a, ecps), a, b, kx, d), e)
+
+
+
+
+Stdout
+----------------------------------------------------
+
+

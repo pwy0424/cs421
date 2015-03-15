@@ -1,0 +1,196 @@
+
+mp11 grade report for pan30
+================================
+
+Latest handin (graded copy) was - on_time
+
+*Regular Problems:
+Grading script score  => [53 / 53]
+Late Penalty          => 0
+Point adjustments     => 0
+Total                 => 53
+
+*Extra Credit:
+Grading script score for extra credit => [0 / 0]
+Late Penalty for extra credit         => 0
+Point adjustments for extra credit    => 0
+Total extra credit                    => 0
+
+
+mp11grader program output
+---------------------
+
+
+[1 / 1] app_cont_to_value [] External (IntVal 6) (correct)
+[1 / 1] app_cont_to_value [ContBinding(1,(ContCPS("c",ConstCPS(External, IntConst 3)),[]))] External (RealVal 6.0) (correct)
+[1 / 1] app_cont_to_value [ValueBinding ("a",StringVal "hi")] (ContCPS("b",BinOpAppCPS(External, ConcatOp, "a", "b", ExnContVarCPS 0))) (StringVal " there") (correct)
+[1 / 1] app_cont_to_value [ValueBinding ("a",IntVal 3); ContBinding (4,(ContCPS("b",ConstCPS(External, IntConst 3)),[]))] (ContVarCPS 4) UnitVal (correct)
+[1 / 1] app_cont_to_value [ValueBinding ("a",IntVal 3); ContBinding (4,(ContCPS("b",ConstCPS(External, IntConst 3)),[]))] (ContVarCPS 3) (BoolVal true) (correct)
+[1 / 1] app_cont_to_value [ValueBinding ("a",IntVal 3)] (ExnMatch EmptyExnContCPS) (IntVal 3) (correct)
+[1 / 1] app_cont_to_value [ValueBinding ("a",IntVal 3)] (ExnMatch (UpdateExnContCSP ([(Some 2, VarCPS(External, "a")); (Some 3, ConstCPS(ContCPS("b",VarCPS(External,"b")),StringConst "bye"))], EmptyExnContCPS))) (IntVal 3) (correct)
+[1 / 1] app_cont_to_value [ValueBinding ("a",IntVal 3)] (ExnMatch (UpdateExnContCSP ([(Some 1, ConstCPS(ContCPS("b", VarCPS(External, "b")),StringConst "hi")); (None, VarCPS(External, "a")); (Some 3, ConstCPS(ContCPS("c", VarCPS(External, "c")),UnitConst))], EmptyExnContCPS))) (IntVal 3) (correct)
+[1 / 1] app_cont_to_value [ValueBinding ("a",IntVal 3)] (ExnMatch (UpdateExnContCSP ([(Some 3, ConstCPS(ContCPS("b", VarCPS(External, "b")),StringConst "hi")); (None, VarCPS(External, "a")); (Some 2, ConstCPS(ContCPS("c", VarCPS(External, "c")),NilConst))], EmptyExnContCPS))) (IntVal 3) (correct)
+[1 / 1] app_cont_to_value [ValueBinding ("a",IntVal 3)] (ExnMatch (UpdateExnContCSP ([(Some 3, ConstCPS(ContCPS("b", VarCPS(External, "b")),StringConst "hi")); (Some 2, ConstCPS(ContCPS("c", VarCPS(External, "c")),NilConst))], EmptyExnContCPS))) (IntVal 7) (correct)
+[1 / 1] app_cont_to_value [ValueBinding ("a",IntVal 3)] (ExnMatch (UpdateExnContCSP ([(Some 3, ConstCPS(ContCPS("b", VarCPS(External, "b")),StringConst "hi"))], UpdateExnContCSP ([(Some 2, ConstCPS(ContCPS("c", VarCPS(External, "c")),NilConst))], EmptyExnContCPS)))) (IntVal 2) (correct)
+[1 / 1] app_cont_to_value [ValueBinding ("a",IntVal 6); ExnContBinding(4, (UpdateExnContCSP ([(Some 2, VarCPS(External, "a"))], ExnContVarCPS 7), [ExnContBinding(7,(UpdateExnContCSP ([(Some 3, ConstCPS(ContCPS("b",VarCPS(External,"b")), StringConst "bye"))], EmptyExnContCPS),[]))]))] (ExnMatch (ExnContVarCPS 4)) (IntVal 3) (correct)
+[1 / 1] one_step_exp_cps_eval [] (ConstCPS(External, IntConst 2)) (correct)
+[1 / 1] one_step_exp_cps_eval [] (ConstCPS(ContCPS("z",VarCPS(External,"z")), IntConst 2)) (correct)
+[1 / 1] one_step_exp_cps_eval [ValueBinding("x", IntVal 2)] (VarCPS(External, "x")) (correct)
+[1 / 1] one_step_exp_cps_eval [ValueBinding("x", IntVal 2)] (VarCPS(ContCPS("z",VarCPS(External,"z")), "x")) (correct)
+[1 / 1] one_step_exp_cps_eval [] (VarCPS(External, "x")) (correct)
+[1 / 1] one_step_exp_cps_eval [ValueBinding("x", IntVal 2)] (MonOpAppCPS(External, IntNegOp, "x", EmptyExnContCPS)) (correct)
+[1 / 1] one_step_exp_cps_eval [] (MonOpAppCPS(External, IntNegOp, "x", EmptyExnContCPS)) (correct)
+[1 / 1] one_step_exp_cps_eval [ValueBinding("x", IntVal 2)] (MonOpAppCPS(ContCPS("z",VarCPS(External,"z")), IntNegOp, "x", EmptyExnContCPS)) (correct)
+[1 / 1] one_step_exp_cps_eval [ValueBinding("x", ListVal [])] (MonOpAppCPS(External, HdOp, "x", UpdateExnContCSP([(Some 0, ConstCPS(External,IntConst 20))], EmptyExnContCPS))) (correct)
+[1 / 1] one_step_exp_cps_eval [ValueBinding("x", ListVal [])] (MonOpAppCPS(ContCPS("z",VarCPS(External,"z")), TlOp, "x", UpdateExnContCSP([(Some 0, ConstCPS(External,IntConst 20))], EmptyExnContCPS))) (correct)
+[1 / 1] one_step_exp_cps_eval [ValueBinding("x", ListVal [])] (MonOpAppCPS(External, HdOp, "x", EmptyExnContCPS)) (correct)
+[1 / 1] one_step_exp_cps_eval [ValueBinding("x", ListVal [])] (MonOpAppCPS(External, TlOp, "x", UpdateExnContCSP([(Some 0, ConstCPS(ContCPS("z",VarCPS(External,"z")), NilConst))], EmptyExnContCPS))) (correct)
+[1 / 1] one_step_exp_cps_eval [ValueBinding("b", IntVal 3);ValueBinding("a", IntVal 2)] (BinOpAppCPS(External, IntPlusOp, "a", "b", EmptyExnContCPS)) (correct)
+[1 / 1] one_step_exp_cps_eval [ValueBinding("b", IntVal 3)] (BinOpAppCPS(External, IntPlusOp, "a", "b", EmptyExnContCPS)) (correct)
+[1 / 1] one_step_exp_cps_eval [ValueBinding("a", IntVal 2)] (BinOpAppCPS(External, IntPlusOp, "a", "b", EmptyExnContCPS)) (correct)
+[1 / 1] one_step_exp_cps_eval [ValueBinding("b", IntVal 3);ValueBinding("a", IntVal 2)] (BinOpAppCPS(ContCPS("z",VarCPS(External,"z")), IntPlusOp, "a", "b", EmptyExnContCPS)) (correct)
+[1 / 1] one_step_exp_cps_eval [ValueBinding("d", IntVal 0);ValueBinding("c", IntVal 2)] (BinOpAppCPS(External, IntDivOp, "c", "d", UpdateExnContCSP([(Some 0, ConstCPS(External,IntConst 20))], EmptyExnContCPS))) (correct)
+[1 / 1] one_step_exp_cps_eval [ValueBinding("d", IntVal 0);ValueBinding("c", IntVal 2)] (BinOpAppCPS(ContCPS("z",VarCPS(External,"z")), IntDivOp, "c", "d", UpdateExnContCSP([(Some 0, ConstCPS(External,IntConst 20))], EmptyExnContCPS))) (correct)
+[1 / 1] one_step_exp_cps_eval [ValueBinding("d", RealVal 0.0);ValueBinding("c", RealVal 2.3)] (BinOpAppCPS(ContCPS("z",VarCPS(External,"z")), RealDivOp, "c", "d", EmptyExnContCPS)) (correct)
+[1 / 1] one_step_exp_cps_eval [ValueBinding("d", RealVal 0.0);ValueBinding("c", RealVal 2.3)] (BinOpAppCPS(External, RealDivOp, "c", "d", UpdateExnContCSP([(Some 0, ConstCPS(ContCPS("z",VarCPS(External,"z")), RealConst 4.5))], EmptyExnContCPS))) (correct)
+[1 / 1] one_step_exp_cps_eval [ValueBinding("a", BoolVal true)] (IfCPS("a", ConstCPS(External,IntConst 1), ConstCPS(External,IntConst 0))) (correct)
+[1 / 1] one_step_exp_cps_eval [] (IfCPS("a", ConstCPS(External,IntConst 1), ConstCPS(External,IntConst 0))) (correct)
+[1 / 1] one_step_exp_cps_eval [ValueBinding("a", BoolVal true)] (IfCPS("a", ConstCPS(ContCPS("z",VarCPS(External,"z")),StringConst "splat"), ConstCPS(ContCPS("z",ConstCPS(External, StringConst "plop")), StringConst "flop"))) (correct)
+[1 / 1] one_step_exp_cps_eval [ValueBinding("a", BoolVal false)] (IfCPS("a", ConstCPS(External,IntConst 1), ConstCPS(External,IntConst 0))) (correct)
+[1 / 1] one_step_exp_cps_eval [ValueBinding("a", BoolVal false)] (IfCPS("a", ConstCPS(ContCPS("z",VarCPS(External,"z")),StringConst "splat"), ConstCPS(ContCPS("z",ConstCPS(External, StringConst "plop")), StringConst "flop"))) (correct)
+[1 / 1] one_step_exp_cps_eval [] (FnCPS (External, "x", 1, 0, VarCPS (ContCPS ("a", ConstCPS (ContCPS ("b", BinOpAppCPS (ContVarCPS 1, IntPlusOp, "a", "b", ExnContVarCPS 0)), IntConst 5)), "x"))) (correct)
+[1 / 1] one_step_exp_cps_eval [ValueBinding("y", BoolVal false)] (FnCPS (ContCPS("z",VarCPS(External,"z")), "x", 1, 0, VarCPS (ContCPS ("a", ConstCPS (ContCPS ("b", BinOpAppCPS (ContVarCPS 1, IntPlusOp, "a", "b", ExnContVarCPS 0)), IntConst 5)), "x"))) (correct)
+[1 / 1] one_step_exp_cps_eval [ ValueBinding("x", BoolVal false)] (FnCPS (External, "x", 1, 0, VarCPS (ContCPS ("a", ConstCPS (ContCPS ("b", BinOpAppCPS (ContVarCPS 1, IntPlusOp, "a", "b", ExnContVarCPS 0)), IntConst 5)), "x"))) (correct)
+[1 / 1] one_step_exp_cps_eval [] (cps_dec (parse "val rec f n = if n = 0 then 1 else f (n - 1);") (VarCPS(External, "f")) EmptyExnContCPS) (correct)
+[1 / 1] one_step_exp_cps_eval [ValueBinding("y", IntVal 3)] (cps_dec (parse "val rec even n = if n = 0 then true else if n = 1 then false else (even (n - 2));") (VarCPS(External, "even")) EmptyExnContCPS) (correct)
+[1 / 1] one_step_exp_cps_eval [ValueBinding("y", IntVal 3)] (cps_dec (parse "val rec even n = if n = 0 then true else if n = 1 then false else (even (n - 2));") (VarCPS(ContCPS("z",VarCPS(External,"z")), "even")) EmptyExnContCPS) (correct)
+[1 / 1] one_step_exp_cps_eval [ValueBinding("plus5", (CPSClosureVal ("x", 1, 0, VarCPS (ContCPS ("a", ConstCPS (ContCPS ("b", BinOpAppCPS (ContVarCPS 1, IntPlusOp, "a", "b", ExnContVarCPS 0)), IntConst 5)), "x"), []))); ValueBinding("c",IntVal 2)] (AppCPS(External, "plus5", "c", EmptyExnContCPS)) (correct)
+[1 / 1] one_step_exp_cps_eval [ValueBinding("c",IntVal 2)] (AppCPS(External, "plus5", "c", EmptyExnContCPS)) (correct)
+[1 / 1] one_step_exp_cps_eval [ValueBinding("plus5", (CPSClosureVal ("x", 1, 0, VarCPS (ContCPS ("a", ConstCPS (ContCPS ("b", BinOpAppCPS (ContVarCPS 1, IntPlusOp, "a", "b", ExnContVarCPS 0)), IntConst 5)), "x"), [])))] (AppCPS(External, "plus5", "c", EmptyExnContCPS)) (correct)
+[1 / 1] one_step_exp_cps_eval [ValueBinding("even", (CPSRecClosureVal ("even", "n", 1, 0, VarCPS (ContCPS ("8", ConstCPS (ContCPS ("9", BinOpAppCPS (ContCPS ("0", IfCPS ("0", ConstCPS (ContVarCPS 1, BoolConst true), VarCPS (ContCPS ("6", ConstCPS (ContCPS ("7", BinOpAppCPS (ContCPS ("1", IfCPS ("1", ConstCPS (ContVarCPS 1, BoolConst false), VarCPS (ContCPS ("2", VarCPS (ContCPS ("4", ConstCPS (ContCPS ("5", BinOpAppCPS (ContCPS ("3", AppCPS (ContVarCPS 1, "2", "3", ExnContVarCPS 0)), IntMinusOp, "4", "5", ExnContVarCPS 0)), IntConst 2)), "n")), "even"))), EqOp, "6", "7", ExnContVarCPS 0)), IntConst 1)), "n"))), EqOp, "8", "9", ExnContVarCPS 0)), IntConst 0)), "n"), []))); ValueBinding ("a", IntVal 3)] (AppCPS(External, "even", "a", EmptyExnContCPS)) (correct)
+[1 / 1] one_step_exp_cps_eval [ValueBinding("even", (CPSRecClosureVal ("even", "n", 1, 0, VarCPS (ContCPS ("8", ConstCPS (ContCPS ("9", BinOpAppCPS (ContCPS ("0", IfCPS ("0", ConstCPS (ContVarCPS 1, BoolConst true), VarCPS (ContCPS ("6", ConstCPS (ContCPS ("7", BinOpAppCPS (ContCPS ("1", IfCPS ("1", ConstCPS (ContVarCPS 1, BoolConst false), VarCPS (ContCPS ("2", VarCPS (ContCPS ("4", ConstCPS (ContCPS ("5", BinOpAppCPS (ContCPS ("3", AppCPS (ContVarCPS 1, "2", "3", ExnContVarCPS 0)), IntMinusOp, "4", "5", ExnContVarCPS 0)), IntConst 2)), "n")), "even"))), EqOp, "6", "7", ExnContVarCPS 0)), IntConst 1)), "n"))), EqOp, "8", "9", ExnContVarCPS 0)), IntConst 0)), "n"), [])))] (AppCPS(External, "even", "a", EmptyExnContCPS)) (correct)
+[1 / 1] one_step_exp_cps_eval [ValueBinding("f", (CPSRecClosureVal ("even", "n", 1, 0, VarCPS (ContCPS ("8", ConstCPS (ContCPS ("9", BinOpAppCPS (ContCPS ("0", IfCPS ("0", ConstCPS (ContVarCPS 1, BoolConst true), VarCPS (ContCPS ("6", ConstCPS (ContCPS ("7", BinOpAppCPS (ContCPS ("1", IfCPS ("1", ConstCPS (ContVarCPS 1, BoolConst false), VarCPS (ContCPS ("2", VarCPS (ContCPS ("4", ConstCPS (ContCPS ("5", BinOpAppCPS (ContCPS ("3", AppCPS (ContVarCPS 1, "2", "3", ExnContVarCPS 0)), IntMinusOp, "4", "5", ExnContVarCPS 0)), IntConst 2)), "n")), "even"))), EqOp, "6", "7", ExnContVarCPS 0)), IntConst 1)), "n"))), EqOp, "8", "9", ExnContVarCPS 0)), IntConst 0)), "n"), []))); ValueBinding ("a", IntVal 3)] (AppCPS(External, "f", "a", EmptyExnContCPS)) (correct)
+[4 / 4] eval_exp_cps [] (cps_dec (parse "val not = fn b => if b then false else true val rec div_aux n = (fn l => if l = [] then n else if hd l = 0 then raise 5 else (div_aux n (tl l)) / (hd l)) val div_by_list = fn m => fn lst => ((div_aux m lst) handle 5 => 0);") (cps_dec (parse "val result = (div_by_list 6 [3, 2], div_by_list 6 [3, 0, 2]);") (VarCPS(External, "result")) EmptyExnContCPS) EmptyExnContCPS) (correct)
+
+Total: [53 / 53]
+Extra: [0 / 0]
+
+Additional outout from compiling students code (may be empty)
+----------------------------------------------------
+
+
+
+Student's code (with comments and point adjustments)
+----------------------------------------------------
+
+
+(* File: mp11-skeleton.ml *)
+(* Team with: Yifang Zhang - zhang303 *)
+(* get help from fall 2012 course website *)
+
+open Mp11common;;
+
+let rec match_lookup l n =
+	match l with 
+		| [] -> None
+		| (Some m, v)::more -> if m != n then match_lookup more n else Some v
+		| (None, v)::_ -> Some v
+
+let rec app_exn_handler_cont env ce n =
+	match ce with 
+		| EmptyExnContCPS -> UncaughtException n
+		|  ExnContVarCPS i ->
+			(
+				match lookup_exn_cont env i with 
+					| None -> Failed
+					| Some (ke',env') -> app_exn_handler_cont env' ke' n
+			)
+		| UpdateExnContCSP (handler, ce') -> 
+			(
+				match match_lookup handler n with
+					| None -> app_exn_handler_cont env ce' n
+					| Some ecps -> Intermediate(env, ecps)
+			)
+
+let rec app_cont_to_value env k v =
+	match k with 
+		| ContVarCPS i ->
+			(
+				match lookup_cont env i with
+					| None -> Failed
+					| Some (k',env') -> app_cont_to_value env' k' v
+			)
+		| ContCPS (y, ec) -> Intermediate(ValueBinding(y,v)::env, ec)
+		| ExnMatch ke ->
+			(
+				match v with 
+					| IntVal n -> app_exn_handler_cont env ke n
+					| _ -> Failed
+			)
+		| External -> Final v
+
+let rec one_step_exp_cps_eval env exp_cps =
+	match exp_cps with
+		| ConstCPS (k,c) -> app_cont_to_value env k (const_to_val c)
+		| VarCPS(k, x) ->
+			(
+				match lookup_value env x with
+					| None -> Failed
+					| Some v -> app_cont_to_value env k v
+			)
+		| MonOpAppCPS (k, monop, x, ke) ->
+			(
+				match lookup_value env x with
+					| None -> Failed
+					| Some u ->
+						(
+							match monOpApply monop u with
+								| Exn n -> app_exn_handler_cont env ke n
+								| Value v -> app_cont_to_value env k v
+						)
+			)
+		| BinOpAppCPS (k, binop, x, y, ke) -> 
+			(
+				match (lookup_value env x, lookup_value env y) with
+					| (Some w, Some u) ->
+						(
+							match binOpApply binop w u with
+								| Exn n -> app_exn_handler_cont env ke n
+								| Value v -> app_cont_to_value env k v
+						)
+					| _ -> Failed
+			)
+		| IfCPS (b, e1, e2) ->
+			(
+				match lookup_value env b with
+					| Some (BoolVal true) -> Intermediate(env, e1)
+					| Some (BoolVal false) -> Intermediate(env, e2)
+					| _ -> Failed
+			)
+		| FnCPS (k, x, i, j, ecps) -> app_cont_to_value env k (CPSClosureVal(x, i, j, ecps, env))
+		| FixCPS (k, f, x, i, j, ecps) -> app_cont_to_value env k (CPSRecClosureVal(f, x, i, j, ecps, env))
+		| AppCPS (k, f, x, ke) ->
+			(
+				match lookup_value env f with
+					| Some(CPSClosureVal(y, i, j, ecps, env')) ->
+						(
+							match lookup_value env x with
+								| None -> Failed
+								| Some v -> Intermediate (
+												(ValueBinding(y, v) :: ContBinding(i,(k,env)) :: ExnContBinding (j,(ke, env)) :: env')
+											, ecps)
+						)
+		| Some(CPSRecClosureVal(g, y, i, j, ecps, env')) ->
+			(
+				match lookup_value env x with
+					| None -> Failed
+					| Some v -> Intermediate(
+									(ValueBinding (y, v) :: ValueBinding (g, CPSRecClosureVal (g, y, i, j, ecps, env')) :: ContBinding (i,(k,env)) :: ExnContBinding (j,(ke, env)) :: env')
+								, ecps)
+			)
+		| _ -> Failed)
+
+Stdout
+----------------------------------------------------
+
+
